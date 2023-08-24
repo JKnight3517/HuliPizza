@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    var orders: [Int] = [1,2,3,4,5,6]
     
     var body: some View {
         VStack {
             HeaderView()
-            OrderView()
+            OrderView(orders: orders)
             MenuItemView()
             MenuView()
             Spacer()
