@@ -11,29 +11,31 @@ struct MenuItemView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Margherita")
+                Text("Margherita Huli Pizza")
                     .font(.title)
                     .fontWeight(.bold)
-                    .foregroundStyle(.black)
+                    .foregroundStyle(.ultraThickMaterial)
                     .padding(.leading)
-                    .frame(width: 300)
-                    .background(LinearGradient(colors: [Color("Surf"), Color("Sky").opacity(0.1)],
-                                               startPoint: .leading,
-                                               endPoint: .trailing), in: Capsule())
                 
-                if let image = UIImage(named: "0_lg") {
+                if let image = UIImage(named: "0x_lg") {
                     Image(uiImage: image)
                         .resizable()
                         .scaledToFit()
-                        .cornerRadius(10)
-                        .shadow(color: .teal, radius: 5, x: 8,y:8)
+                        .padding([.top,.bottom], 3)
+                        .cornerRadius(15)
+                   
                     
                 } else {
                     Image("surfboard_lg")
                         .resizable()
                         .scaledToFit()
+                        .rotationEffect(Angle(degrees: 180))
                 }
             }
+            .background(LinearGradient(colors: [Color("Surf"), Color("Sky").opacity(0.1)],
+                                       startPoint: .leading,
+                                       endPoint: .trailing), in: Capsule())
+            .shadow(color: .teal, radius: 5, x: 8,y:8)
           
             VStack(alignment: .leading) {
               
