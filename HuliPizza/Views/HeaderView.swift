@@ -36,13 +36,7 @@ struct HeaderView: View {
                 }
                     
             }
-            Label {
-                Text(orders.orderTotal, format: .currency(code: "USD"))
-                
-            }
-        icon: {
-            Image(systemName: orders.orderItems.isEmpty ? "cart" : "cart.circle.fill")
-        }
+         
  
             
         }
