@@ -26,6 +26,7 @@
 		6775BB3F2A9AD23900F3A9A3 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6775BB3B2A9AD23900F3A9A3 /* OrderItem.swift */; };
 		6775BB402A9AD23900F3A9A3 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6775BB3C2A9AD23900F3A9A3 /* MenuModel.swift */; };
 		6775BB422A9E4D8300F3A9A3 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6775BB412A9E4D8300F3A9A3 /* StatusBarView.swift */; };
+		6775BB442A9E501C00F3A9A3 /* OrderItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6775BB432A9E501C00F3A9A3 /* OrderItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		6775BB3B2A9AD23900F3A9A3 /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 		6775BB3C2A9AD23900F3A9A3 /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		6775BB412A9E4D8300F3A9A3 /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
+		6775BB432A9E501C00F3A9A3 /* OrderItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				6775BB342A971E4500F3A9A3 /* HeaderView.swift */,
 				6775BB292A971DA800F3A9A3 /* OrderView.swift */,
 				6775BB322A971E3700F3A9A3 /* OrderRowView.swift */,
+				6775BB432A9E501C00F3A9A3 /* OrderItemView.swift */,
 				6775BB2B2A971DBA00F3A9A3 /* MenuView.swift */,
 				6775BB2E2A971E2400F3A9A3 /* MenuItemView.swift */,
 				6775BB302A971E2F00F3A9A3 /* MenuRowView.swift */,
@@ -316,6 +319,7 @@
 				6775BB002A97154500F3A9A3 /* HuliPizzaApp.swift in Sources */,
 				6775BB3F2A9AD23900F3A9A3 /* OrderItem.swift in Sources */,
 				6775BB372A97212B00F3A9A3 /* RatingsView.swift in Sources */,
+				6775BB442A9E501C00F3A9A3 /* OrderItemView.swift in Sources */,
 				6775BB312A971E2F00F3A9A3 /* MenuRowView.swift in Sources */,
 				6775BB332A971E3700F3A9A3 /* OrderRowView.swift in Sources */,
 				6775BB402A9AD23900F3A9A3 /* MenuModel.swift in Sources */,
