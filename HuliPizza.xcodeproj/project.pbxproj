@@ -116,9 +116,9 @@
 		6775BAFE2A97154500F3A9A3 /* HuliPizza */ = {
 			isa = PBXGroup;
 			children = (
+				6775BAFF2A97154500F3A9A3 /* HuliPizzaApp.swift */,
 				6775BB012A97154500F3A9A3 /* ContentView.swift */,
 				6775BB2D2A971E0F00F3A9A3 /* Views */,
-				6775BAFF2A97154500F3A9A3 /* HuliPizzaApp.swift */,
 				6775BB032A97154700F3A9A3 /* Assets.xcassets */,
 				6775BB052A97154700F3A9A3 /* Preview Content */,
 			);
