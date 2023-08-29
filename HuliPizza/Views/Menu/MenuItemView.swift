@@ -11,6 +11,7 @@ struct MenuItemView: View {
     
     @State private var addedItem: Bool = false
     @Binding var item: MenuItem
+    @State var presentAlert: Bool = false
     @ObservedObject var orders: OrderModel
     var body: some View {
         VStack {
@@ -49,9 +50,10 @@ struct MenuItemView: View {
                 }.frame(maxHeight: 200)
         
             }
+            Spacer()
             Button {
-                addedItem = true
-                orders.addOrder(item, quantity: 1)
+            
+                presentAlert = true
             } label: {
                 Spacer()
                 Text(item.price, format: .currency(code: "USD")).bold()
@@ -63,6 +65,17 @@ struct MenuItemView: View {
             .background(.red, in: Capsule())
             .foregroundColor(.white)
             .padding(5)
+            .alert("Buy a \(item.name)", isPresented: $presentAlert) {
+                Button("No", role: .cancel){}
+                Button("Yes") {
+                    addedItem = true
+                    orders.addOrder(item, quantity: 1)
+                }
+                Button("Make It a Double!") {
+                    addedItem = true
+                    orders.addOrder(item, quantity: 2)
+                }
+            }
 
          
 
