@@ -153,12 +153,12 @@
 		6775BB2D2A971E0F00F3A9A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6775BB342A971E4500F3A9A3 /* HeaderView.swift */,
 				6775BB292A971DA800F3A9A3 /* OrderView.swift */,
 				6775BB322A971E3700F3A9A3 /* OrderRowView.swift */,
 				6775BB2B2A971DBA00F3A9A3 /* MenuView.swift */,
 				6775BB2E2A971E2400F3A9A3 /* MenuItemView.swift */,
 				6775BB302A971E2F00F3A9A3 /* MenuRowView.swift */,
-				6775BB342A971E4500F3A9A3 /* HeaderView.swift */,
 				6775BB362A97212B00F3A9A3 /* RatingsView.swift */,
 				6775BB382A9AD23900F3A9A3 /* Model Code */,
 			);
