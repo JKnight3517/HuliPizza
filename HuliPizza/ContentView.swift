@@ -14,17 +14,9 @@ struct ContentView: View {
     @State private var selectedItem: MenuItem = noMenuItem
     @State private var presentGrid: Bool = false
     var body: some View {
-        VStack {
-            HeaderView()
-                .shadow(radius: 5)
-                .environment(\.colorScheme, .light)
-            StatusBarView(showOrders: $showOrders, presentGrid: $presentGrid)
-
-            
-            if showOrders {
-                OrderView(orders: orders)
-                    .cornerRadius(10)
-            } else {
+        TabView {
+            VStack {
+                HeaderView()
                 MenuItemView(item: $selectedItem, orders: orders)
                     .padding(5)
                     .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 10))
@@ -33,10 +25,24 @@ struct ContentView: View {
                 } else {
                     MenuView(menu: menu, selectedItem: $selectedItem)
                 }
-             
+            }.tabItem {
+                Label("Menu", systemImage: "list.bullet")
             }
-            Spacer()
-         
+            VStack {
+                HeaderView()
+                    .shadow(radius: 5)
+                    .environment(\.colorScheme, .light)
+                StatusBarView(showOrders: $showOrders, presentGrid: $presentGrid)
+
+                
+
+                    OrderView(orders: orders)
+                        .cornerRadius(10)
+            }.tabItem {
+                Label("Order", systemImage: "cart")
+            }
+           
+
             
         }
         .padding()

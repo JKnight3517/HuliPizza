@@ -40,7 +40,7 @@ struct StatusBarView: View {
         }
         }
         .foregroundStyle(.white)
-        .font(.title)
+        .font(.body)
         
         
     }
